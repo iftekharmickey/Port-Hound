@@ -1,9 +1,5 @@
- ____   ___  ____ _____   ____   ____    _    _   _ _   _ _____ ____  
-|  _ \ / _ \|  _ \_   _| / ___| / ___|  / \  | \ | | \ | | ____|  _ \ 
-| |_) | | | | |_) || |   \___ \| |     / _ \ |  \| |  \| |  _| | |_) |
-|  __/| |_| |  _ < | |    ___) | |___ / ___ \| |\  | |\  | |___|  _ < 
-|_|    \___/|_| \_\|_|   |____/ \____/_/   \_\_| \_|_| \_|_____|_| \_\
-                                                                     
+***Port Scanner***
+
 **What is a port scanner?** 
 
 A port scanner is a computer program that checks network ports for one of three possible statuses – open, closed, or filtered. Port scanners are valuable tools in diagnosing network and connectivity issues. However, attackers use port scanners to detect possible access points for infiltration and identify what kinds of devices you are running on the network, like firewalls, proxy servers, or VPN servers. 
