@@ -14,10 +14,10 @@ A socket consists of three things:
   2. A transport protocol
   3. A port number
 
-A port is a number between 1 and 65535 inclusive that signifies a logical gate in a device. Every connection between a client and server requires a unique socket. For example:
+A port is a number between `1` and `65535` inclusive that signifies a logical gate in a device. Every connection between a client and server requires a unique socket. For example:
 
-  - 1030 is a port.
-  - (10.1.1.2, TCP, port 1030) is a socket.
+  - `1030` is a port.
+  - (`10.1.1.2`, `TCP`, port `1030`) is a socket.
 
 ## What is a port scanner? ##
 
