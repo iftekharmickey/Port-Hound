@@ -33,22 +33,22 @@ A port is a number between `1` and `65535` inclusive that signifies a logical ga
   - `1030` is a port.
   - (`10.1.1.2`, `TCP`, port `1030`) is a socket.
 
-## What is `AF_INET`? ##
+## What is AF_INET? ##
 
 `AF_INET` is an address family used to designate the type of addresses your socket can communicate with (in this case, IPv4 addresses). When you create a socket, you have to specify its address family, and then you can only use addresses of that type with the socket.
 
-## What is `SOCK_STREAM`? ##
+## What is SOCK_STREAM? ##
 
 `SOCK_STREAM` is the socket type for TCP, the protocol used to transport our messages in the network. For UDP, we use socket type `SOCK_DGRAM`*.*
 
-## What is `KeyboardInterrupt`? ##
+## What is KeyboardInterrupt? ##
 
 `KeyboardInterrupt`  exception is generated when the user interrupts the normal execution of a program such as by pressing `Ctrl + C`.
 
-## What is `socket.gaierror`? ##
+## What is socket.gaierror? ##
 
 gai stands for `getaddrinfo()`. The `socket.gaierror` error is generated when the given hostname is invalid such as `' '` instead of `''`. `''` means "all local addresses".
 
-## What is `socket.error`? ##
+## What is socket.error? ##
 
 A `socket.error` indicates that data sent over the network has not arrived in time.
