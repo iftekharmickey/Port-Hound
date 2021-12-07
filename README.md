@@ -1,5 +1,19 @@
 # Port Scanner #
 
+## What is a port scanner? ##
+
+A port scanner is a program that checks network ports for one of three possible statuses – open, closed, or filtered. Port scanners are valuable tools in diagnosing network and connectivity issues. However, attackers use port scanners to detect possible access points for infiltration and identify what kinds of devices you are running on the network, such as firewalls, proxy servers, or VPN servers.
+
+## How does a port scanner work? ##
+
+A port scanner sends a network request to connect to a specific TCP or UDP port on a computer and records the response. To put it another way, the scanner sends a packet of network data to a port to check its current status. For example, if we wanted to check whether a web server was operating correctly, we would check the status of port 80 on that server to ensure it was open and listening. The status helps network engineers diagnose network issues or application connectivity issues or helps attackers find possible ports to infiltrate your network.
+
+## Usage ##
+
+```python3 portscanner.py <ip-address>```
+
+# FAQ #
+
 ## What is a socket? ##
 
 A socket is one endpoint of a two-way communication link between two programs running on the network. A socket is bound to a port number so that the TCP layer can identify the application that data is destined to be sent to.
@@ -19,14 +33,22 @@ A port is a number between `1` and `65535` inclusive that signifies a logical ga
   - `1030` is a port.
   - (`10.1.1.2`, `TCP`, port `1030`) is a socket.
 
-## What is a port scanner? ##
+## What is `AF_INET`? ##
 
-A port scanner is a program that checks network ports for one of three possible statuses – open, closed, or filtered. Port scanners are valuable tools in diagnosing network and connectivity issues. However, attackers use port scanners to detect possible access points for infiltration and identify what kinds of devices you are running on the network, such as firewalls, proxy servers, or VPN servers.
+`AF_INET` is an address family used to designate the type of addresses your socket can communicate with (in this case, IPv4 addresses). When you create a socket, you have to specify its address family, and then you can only use addresses of that type with the socket.
 
-## How does a port scanner work? ##
+## What is `SOCK_STREAM`? ##
 
-A port scanner sends a network request to connect to a specific TCP or UDP port on a computer and records the response. To put it another way, the scanner sends a packet of network data to a port to check its current status. For example, if we wanted to check whether a web server was operating correctly, we would check the status of port 80 on that server to ensure it was open and listening. The status helps network engineers diagnose network issues or application connectivity issues or helps attackers find possible ports to infiltrate your network.
+`SOCK_STREAM` is the socket type for TCP, the protocol used to transport our messages in the network. For UDP, we use socket type `SOCK_DGRAM`*.*
 
-## Usage ##
+## What is `KeyboardInterrupt`? ##
 
-```python3 portscanner.py <ip-address>```
+`KeyboardInterrupt`  exception is generated when the user interrupts the normal execution of a program such as by pressing `Ctrl + C`.
+
+## What is `socket.gaierror`? ##
+
+gai stands for `getaddrinfo()`. The `socket.gaierror` error is generated when the given hostname is invalid such as `' '` instead of `''`. `''` means "all local addresses".
+
+## What is `socket.error`? ##
+
+A `socket.error` indicates that data sent over the network has not arrived in time.
