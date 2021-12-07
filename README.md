@@ -43,11 +43,13 @@ A port is a number between `1` and `65535` inclusive that signifies a logical ga
 
 ## What is KeyboardInterrupt? ##
 
-`KeyboardInterrupt`  exception is generated when the user interrupts the normal execution of a program such as by pressing `Ctrl + C`.
+`KeyboardInterrupt` exception is generated when the user interrupts the normal execution of a program such as by pressing `Ctrl + C`.
 
 ## What is socket.gaierror? ##
 
-gai stands for `getaddrinfo()`. The `socket.gaierror` error is generated when the given hostname is invalid such as `' '` instead of `''`. `''` means "all local addresses".
+`gai` stands for `getaddrinfo()`. The `socket.gaierror` is generated when the given hostname is invalid such as a `' '` is provided as hostname instead of `''`. 
+
+A `''` means "all local addresses".
 
 ## What is socket.error? ##
 
