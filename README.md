@@ -47,9 +47,7 @@ A port is a number between `1` and `65535` inclusive that signifies a logical ga
 
 ## What is socket.gaierror? ##
 
-`gai` stands for `getaddrinfo()`. The `socket.gaierror` is generated when the given hostname is invalid such as a `' '` is provided as hostname instead of `''`. 
-
-A `''` means "all local addresses".
+`gai` stands for `getaddrinfo()`. The `socket.gaierror` is generated when the given hostname is invalid, such as a `' '` is provided as hostname instead of `''` which means "all local addresses".
 
 ## What is socket.error? ##
 
