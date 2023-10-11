@@ -8,4 +8,4 @@ Please ensure responsible and authorized use of this tool, as unauthorized port 
 
 ## Usage ##
 
-```python3 portscanner.py <IP>```
+```python3 portscanner.py <target-IP>```
