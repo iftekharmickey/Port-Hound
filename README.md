@@ -1,4 +1,4 @@
-# PortScanner #
+# Port-Scanner #
 
 This script, adorned with an ASCII art banner, serves as a versatile network utility. It allows users to scan a target IP address for open ports within the range of 1 to 65535. Upon execution, the script establishes socket connections to various ports, checking their status. When an open port is encountered, the script reports it as "Port [number] is open."
 
