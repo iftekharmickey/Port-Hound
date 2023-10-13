@@ -19,7 +19,7 @@ Replace <target_host> with the hostname or IP address of the target you want to 
 - Python 3.x
 - pyfiglet
 
-You can install the required dependency using 'pip':
+You can install the required dependency using `pip`:
 
   ```bash
   pip install pyfiglet
