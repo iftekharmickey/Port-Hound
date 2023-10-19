@@ -1,34 +1,52 @@
-# Port-Scanner
+# Port-Hound
 
-## Overview
+Port-Hound is a Python-based script that allows you to scan open ports on a target IP address or domain. This tool is designed to help you identify open ports for further analysis and security assessment.
 
-This Python script serves as a versatile network utility. It allows users to scan a target IP address for open ports within the range of 1 to 65535. Upon execution, the script establishes socket connections to various ports, checking their status. When an open port is encountered, the script reports it as "Port [number] is open."
+## Features
 
-This tool is invaluable for network administrators and security professionals, aiding in identifying open ports, potential vulnerabilities, and network configuration issues. It leverages Python's socket module and offers a simple yet effective means of assessing the network perimeter.
+- Simple and efficient port scanning
+- Displays open ports in real-time
+- Provides a final list of open ports
+- ASCII art banner for style
 
-### Usage
+## Usage
 
-You can use this script to check which ports are open on a remote server or device. Please make sure you have the necessary permissions to perform port scanning.
+1. Clone the repository:
 
-  ```bash
-  python port_scanner.py <target_host>
-  ```
-Replace <target_host> with the hostname or IP address of the target you want to scan.
+   ```python
+   git clone https://github.com/iftekharmickey/Port-Hound.git
+   ```
 
-### Requirements and Dependencies
+2. Navigate to the project directory:
+
+   ```python
+   cd Port-Hound
+   ```
+
+3. Run the script:
+
+   ```python
+   python portscanner.py
+   ```
+   
+4. Enter the target IP address or domain when prompted.
+
+5. The script will scan for open ports and display real-time results.
+
+6. At the end, it will provide a list of open ports found.
+
+## Requirements
+
 - Python 3.x
-- pyfiglet
 
-You can install the required dependency using `pip`:
+## Author
 
-  ```bash
-  pip install pyfiglet
-  ```
+This tool was developed by [Iftekhar Tahir](https://github.com/iftekharmickey).
 
-### Author
+## License
 
-This tool was developed by Iftekhar Tahir. If you have any questions or feedback, please don't hesitate to reach out to me at iftekhar.tahir@proton.me.
+This project is licensed under the MIT License. See the ([LICENSE](https://github.com/iftekharmickey/Port-Hound/blob/main/LICENSE)) file for details.
 
-Feel free to fork and modify this script to suit your needs.
+---
 
-Happy scanning!
+**Disclaimer**: This tool is for educational and informational purposes only. Use it responsibly and only on systems for which you have explicit permission.
