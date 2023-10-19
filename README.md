@@ -1,6 +1,6 @@
 # Port-Hound
 
-Port-Hound is a Python-based script that allows you to scan open ports on a target IP address or domain. This tool is designed to help you identify open ports for further analysis and security assessment.
+Port-Hound is a Python-based script that allows you to scan and identify open ports on a target IP address or domain. It offers a simple way to perform basic network reconnaissance and report open ports for further analysis and security assessment.
 
 ## Features
 
